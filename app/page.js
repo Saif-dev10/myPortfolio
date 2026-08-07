@@ -1,69 +1,191 @@
-import Image from "next/image";
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
+import profilepic from '../public/Profile-Pic.png';
+import bannerPic from '../public/Banner-Image.png';
+import attendanceTracker from '../public/attendance-system.png';
+import tradecraft from '../public/TradeCraft-image.png';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Navbar />
+
+      {/* Main Grid */}
+      <section className="">
+
+        <div>
+          {/* Main Content */}
+          <div className="mt-8 shadow-sm border border-gray-200 rounded-lg w-2/3 mx-auto">
+
+          {/* Banner */}
+            <div className="w-full h-50 rounded-lg overflow-hidden relative">
+              <img 
+                src={bannerPic.src}
+                alt="Banner Image"
+                width="100%"
+                height="200%"
+                className="rounded-lg w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Profile picture */}
+            <div className="w-40 h-40 rounded-full absolute top-48 left-55">
+              <img 
+                src={profilepic.src}
+                alt="Profile Picture"
+                width="100"
+                height="100"
+                className="rounded-full w-full h-full object-cover" 
+              />
+            </div>
+
+            <aside className="mx-6 flex justify-between items-center pb-6">
+              <div className="w-80">
+                <h1 className="mt-25 text-lg font-semibold">Saifullah Muhammad Abdulwahab</h1>
+
+                <p className="mt-6">I Help Businesses Build Interfaces Users Actually Want to Use.</p>
+
+                <p className="mt-2 text-gray-600">Nigeria . <a className="text-blue-800 hover:underline font-semibold" href="#">Contact info</a></p>
+              </div>
+
+              <div>
+                <h2 className="text-lg text-lg pr-20">Frontend Developer</h2>
+              </div>
+            </aside>
+          </div>
+
+          {/* About brief */}
+
+          <section className="mt-8 shadow-sm border border-gray-200 rounded-lg w-2/3 mx-auto">
+          <div className="mx-8 my-6">
+
+            <p className="text-lg font-semibold mb-2">About</p>
+
+            <p className="mt-4">
+              Most products don’t fail because of ideas. They fail because they don’t solve real problems in a simple and usable way.
+
+    I’m an Information Technology student and web developer focused on building practical, user-centered web applications. My journey started with learning HTML and CSS on a mobile phone in secondary school, long before I had access to a computer. From there, I kept building step by step, moving from static pages to full web applications using JavaScript, React, Next.js, and Firebase.
+
+    I enjoy turning ideas into working systems, not just designs or concepts.
+
+    What I’ve built so far:
+
+    ✅  Attendance Tracker System 
+    A web application that helps students track course attendance and determine exam eligibility based on attendance requirements (75% threshold).
+
+    ✅ Trade Craft
+    A trading journal platform where users can log trades, analyze performance over time, manage risk, calculate position sizing, and review weekly and monthly trading progress.
+
+    Both projects were designed and built to solve real user problems, from idea stage to deployment.
+
+    Beyond building interfaces, I’ve worked on core application systems including:
+
+    - User authentication systems
+    - Database design and integration (Firebase)
+    - State management across applications
+    - Deployment workflows (Vercel)
+    - Debugging and dependency resolution in real projects
+
+    Before building any product, I spend time researching how existing solutions work, what competitors are doing, and where gaps exist. This helps me design more intentional and useful features instead of building blindly.
+
+    I enjoy:
+
+    - Learning new technologies quickly
+    - Breaking down problems and debugging issues
+    - Building responsive user interfaces
+    - Turning ideas into functional applications
+    - Working independently from concept to deployment
+    - Understanding what users actually need, not just what looks good
+
+    Currently, I’m improving my skills in modern web development with the goal of becoming a well-rounded full-stack developer capable of building and scaling real-world applications.
+
+    If you're building a product and need someone who can learn fast, think through problems, and turn ideas into working software, I’m open to connecting.
+            </p>
+          </div>
+          </section>
+
+          {/* Features Section */}
+
+          <section className="mt-8 shadow-sm border border-gray-200 rounded-lg w-2/3 mx-auto">
+          <div className="mx-8 my-6">
+
+            <p className="text-lg font-semibold mb-2">Featured</p>
+
+            {/* Features Grid */}
+            <div className="mt-4 grid grid-cols-2 gap-4">
+
+              {/* Feature 1 */}
+
+              <div className="border border-gray-300 rounded-lg p-4">
+
+                <h3 className="text-lg font-semibold mb-2">Attendance Tracker System</h3>
+
+                <p className="text-gray-500 text-sm mb-2">Link</p>
+
+                <img 
+                  src={attendanceTracker.src}
+                  alt="Attendance Tracker System"
+                  width="100"
+                  height="100" 
+                  className="w-full h-auto rounded-lg mb-2"
+                />
+
+                <p className="text-gray-600">A web application that helps students track course attendance and determine exam eligibility based on attendance requirements (75% threshold).</p>
+
+                <p className="my-4 text-gray-500">Link to demo:</p>
+
+                <a 
+                  href="https://attendance-app-nine-rosy.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-800 hover:underline font-semibold"
+                >
+                  View Demo
+                </a>
+
+              </div>
+
+              {/* Feature 2 */}
+
+              <div className="border border-gray-300 rounded-lg p-4">
+
+                <h3 className="text-lg font-semibold mb-2">TradeCraft</h3>
+
+                <p className="text-gray-500 text-sm mb-2">Link</p>
+
+                <img 
+                  src={tradecraft.src}
+                  alt="TradeCraft"
+                  width="100"
+                  height="100" 
+                  className="w-full h-auto rounded-lg mb-2"
+                />
+
+                <p className="text-gray-600">TradeCraft is a trading journal and risk management platform that helps traders track their performance and manage account balances, analyze trading history, and calculate risk.</p>
+
+                <p className="my-4 text-gray-500">Link to demo:</p>
+
+                <a 
+                  href="https://trade-craft-app-ryf8.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-800 hover:underline font-semibold"
+                >
+                  View Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+          </section>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+
+
+      <Footer />
+    </>
   );
 }
