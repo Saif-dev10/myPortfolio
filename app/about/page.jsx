@@ -185,12 +185,12 @@ export default function AboutPage() {
                   I build. I break. I learn. I build again.
                 </h1>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600">
-                  I'm an Information Technology student and web developer.
+                  I&apos;m an Information Technology student and web developer.
                   I started with the fundamentals and kept building from
                   there — one project at a time. I enjoy turning ideas into
                   functional applications, and I learn primarily by
                   building things, breaking them, and figuring out why.
-                  I'm still early in this, and still improving.
+                  I&apos;m still early in this, and still improving.
                 </p>
                 <p className="mt-4 text-sm font-medium text-slate-500">
                   Developer <span className="mx-1.5 text-slate-300">•</span>
@@ -359,15 +359,15 @@ export default function AboutPage() {
               {/* Text column */}
               <div>
                 <p className="text-sm leading-relaxed text-slate-600">
-                  Outside development, I study financial markets and trade. It isn't
-                  about the money — it's the process: analyzing situations, thinking
+                  Outside development, I study financial markets and trade. It isn&apos;t
+                  about the money — it&apos;s the process: analyzing situations, thinking
                   in probabilities, managing risk, and reviewing my own decisions
                   honestly. Some of that thinking carries over into how I approach
                   building software.
                 </p>
 
                 <p className="mt-3 text-sm leading-relaxed text-slate-500">
-                  Trading isn't always green. Wins and losses are both part of the
+                  Trading isn&apos;t always green. Wins and losses are both part of the
                   process. What matters to me is understanding the decision, managing
                   the risk, reviewing the outcome, and improving the next execution.
                 </p>
@@ -488,7 +488,7 @@ export default function AboutPage() {
               href="/contact"
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-700"
             >
-              Let's build something useful
+              Let&apos;s build something useful
               <span aria-hidden="true">→</span>
             </Link>
           </Card>
