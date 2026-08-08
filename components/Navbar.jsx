@@ -14,7 +14,7 @@ import { SiGithub, SiX } from 'react-icons/si';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 const navLinks = [
-  { label: 'Home', href: '#' },
+  { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Featured', href: '/featured' },
   { label: 'Projects', href: '/projects' },
