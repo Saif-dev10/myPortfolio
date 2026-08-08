@@ -1,6 +1,6 @@
 'use client';
 
-// import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import {
   Menu,
@@ -70,8 +70,8 @@ export function Navbar() {
       <div className="mx-auto flex min-h-16 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
 
         {/* Brand */}
-        <a
-          href="#home"
+        <Link
+          href="/"
           className="flex shrink-0 items-center gap-2 text-base font-semibold tracking-tight text-slate-900"
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-sm font-bold text-white">
@@ -79,7 +79,7 @@ export function Navbar() {
           </span>
 
           <span>SaifDevX</span>
-        </a>
+        </Link>
 
         {/* Desktop navigation */}
         <ul className="hidden items-center gap-7 md:flex">
@@ -88,7 +88,7 @@ export function Navbar() {
 
             return (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   aria-current={isActive ? 'page' : undefined}
                   className={`relative py-2 text-sm font-medium transition-colors hover:text-blue-700 ${
@@ -102,7 +102,7 @@ export function Navbar() {
                   {isActive && (
                     <span className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-blue-600" />
                   )}
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -134,7 +134,7 @@ export function Navbar() {
         <div className="hidden shrink-0 items-center gap-4 md:flex">
           <div className="flex items-center gap-1">
             {socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
+              <Link
                 key={label}
                 href={href}
                 target="_blank"
@@ -143,17 +143,17 @@ export function Navbar() {
                 className="flex h-9 w-9 items-center justify-center rounded-md text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
               >
                 <Icon size={16} aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
 
-          <a
+          <Link
             href="mailto:muhammedsaifullah06@gmail.com"
             className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
           >
             <Mail size={15} aria-hidden="true" />
             Let&rsquo;s Connect
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -211,7 +211,7 @@ export function Navbar() {
 
               return (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={closeMobileMenu}
                     aria-current={isActive ? 'page' : undefined}
@@ -222,14 +222,14 @@ export function Navbar() {
                     }`}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
           </ul>
 
           {/* Mobile CTA */}
-          <a
+          <Link
             href="#contact"
             onClick={closeMobileMenu}
             className="flex items-center justify-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
@@ -237,12 +237,12 @@ export function Navbar() {
             <Mail size={15} aria-hidden="true" />
             Let&rsquo;s Connect
             <ArrowUpRight size={15} aria-hidden="true" />
-          </a>
+          </Link>
 
           {/* Mobile socials */}
           <div className="flex items-center justify-center gap-2 border-t border-slate-100 pt-4">
             {socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
+              <Link
                 key={label}
                 href={href}
                 target="_blank"
@@ -252,7 +252,7 @@ export function Navbar() {
                 className="flex h-10 w-10 items-center justify-center rounded-md text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
               >
                 <Icon size={18} aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
