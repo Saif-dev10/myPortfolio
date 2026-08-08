@@ -5,6 +5,7 @@ import { AboutSection } from '../components/AboutSection';
 import { FeaturedSection } from '../components/FeaturedSection';
 import { Sidebar } from '../components/Sidebar';
 import { featuredProjects } from '../lib/profileData';
+// import { About } from './about/page';
 
 import profilepic from '../public/Profile-Pic2.png';
 import bannerPic from '../public/Banner-Image.png';

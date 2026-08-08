@@ -1,5 +1,6 @@
 'use client';
 
+// import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import {
   Menu,
@@ -13,11 +14,11 @@ import { SiGithub, SiX } from 'react-icons/si';
 import { FaLinkedinIn } from 'react-icons/fa';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Featured', href: '#featured' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '#' },
+  { label: 'About', href: '/about' },
+  { label: 'Featured', href: '/featured' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 const socialLinks = [
@@ -37,6 +38,9 @@ const socialLinks = [
     icon: SiX,
   },
 ];
+
+// const router = useRouter();
+
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
