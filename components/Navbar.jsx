@@ -23,12 +23,12 @@ const navLinks = [
 const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/YOUR_GITHUB_USERNAME',
+    href: 'https://github.com/Saif-dev10',
     icon: SiGithub,
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/saifdevx',
+    href: 'https://www.linkedin.com/in/saifdevx/',
     icon: FaLinkedinIn,
   },
   {
@@ -144,7 +144,7 @@ export function Navbar() {
           </div>
 
           <a
-            href="#contact"
+            href="mailto:muhammedsaifullah06@gmail.com"
             className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
           >
             <Mail size={15} aria-hidden="true" />

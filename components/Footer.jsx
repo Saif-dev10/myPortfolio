@@ -15,12 +15,12 @@ const footerLinks = [
 const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/YOUR_GITHUB_USERNAME',
+    href: 'https://github.com/Saif-dev10',
     icon: SiGithub,
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/saifdevx',
+    href: 'https://www.linkedin.com/in/saifdevx/',
     icon: FaLinkedinIn,
   },
   {
@@ -169,7 +169,7 @@ export function Footer() {
         <div className="mt-10 flex flex-col-reverse items-center gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:justify-between">
 
           <p className="text-sm text-slate-500">
-            &copy; 2026 SaifDevX. All rights reserved.
+            &copy; {new Date().getFullYear()} SaifDevX. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">
