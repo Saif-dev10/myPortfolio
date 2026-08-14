@@ -55,13 +55,13 @@ const journey = [
     detail: "Moved into making interfaces interactive and dynamic.",
   },
   {
-    stage: "React",
-    detail: "Started thinking in reusable components and application state.",
-  },
-  {
     stage: "Tailwind CSS",
     detail:
       "Learned to build interfaces faster while keeping styling consistent.",
+  },
+  {
+    stage: "React",
+    detail: "Started thinking in reusable components and application state.",
   },
   {
     stage: "Next.js",
